@@ -29,7 +29,7 @@ ggplot(
 ) +
   geom_point()
 
-#linear fit for each species
+#linear model for each species
 ggplot(
   data = penguins,
   mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)
@@ -137,4 +137,5 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
 #saving plots
 ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
   geom_point()
+
 ggsave(filename = "penguin-plot.png")
